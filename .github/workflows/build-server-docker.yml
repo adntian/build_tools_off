@@ -1,4 +1,4 @@
-name: Build Server (Docker Official)
+ename: Build Server (Docker Official)
 
 on:
   workflow_dispatch:
@@ -114,6 +114,7 @@ jobs:
           RUN apt-get -y update && \
               apt-get -y install tar \
                                  sudo \
+                                 curl \
                                  wget
           
           RUN wget https://github.com/Kitware/CMake/releases/download/v3.30.0/cmake-3.30.0-linux-x86_64.tar.gz && \
