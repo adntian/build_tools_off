@@ -1,4 +1,4 @@
-ename: Build Server (Docker Official)
+name: Build Server (Docker Official)
 
 on:
   workflow_dispatch:
