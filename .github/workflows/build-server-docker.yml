@@ -117,7 +117,6 @@ jobs:
                                  wget
 
           RUN apt-get update && apt-get install -y \
-            libglib2.0-dev \
             p7zip-full \
             curl \
             git \
@@ -130,6 +129,21 @@ jobs:
             libssl-dev \
             python3-dev \
             uuid-dev
+
+          RUN apt-get update && apt-get install -y \
+            libglib2.0-dev \
+            libgtk-3-dev \
+            libatk1.0-dev \
+            libatk-bridge2.0-dev \
+            libxkbcommon-dev \
+            libnss3-dev \
+            libasound2-dev \
+            libxcomposite-dev \
+            libxcursor-dev \
+            libxi-dev \
+            libxtst-dev \
+            libxdamage-dev \
+            libxrandr-dev
           
           RUN wget https://github.com/Kitware/CMake/releases/download/v3.30.0/cmake-3.30.0-linux-x86_64.tar.gz && \
               tar -xzf cmake-3.30.0-linux-x86_64.tar.gz -C /opt && \
