@@ -115,6 +115,7 @@ jobs:
               apt-get -y install tar \
                                  sudo \
                                  curl \
+                                 git \
                                  wget
           
           RUN wget https://github.com/Kitware/CMake/releases/download/v3.30.0/cmake-3.30.0-linux-x86_64.tar.gz && \
