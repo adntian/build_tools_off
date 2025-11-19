@@ -206,7 +206,7 @@ jobs:
               echo "=== 开始构建 ===" && \
               echo "分支: $BUILD_BRANCH" && \
               echo "模块: $BUILD_MODULE" && \
-              cd /build_tools/linux && \
+              cd /build_tools/tools/linux && \
               python ./automate.py "$BUILD_MODULE" && \
               # echo "配置构建参数..." && \
               # python ./configure.py --module "$BUILD_MODULE" --branch="$BUILD_BRANCH" --update 1 --clean 1 --qt-dir /build_tools/tools/linux/qt_build/Qt-5.9.9 && \
