@@ -36,6 +36,8 @@ def make():
   base.replaceInFileRE(server_dir + "/Common/sources/constants.js", "LICENSE_EXPIRE_USERS_ONE_DAY = ", "LICENSE_EXPIRE_USERS_ONE_DAY = 3650 * ")
   base.replaceInFileRE(server_dir + "/Common/sources/constants.js", "LICENSE_USERS = \d+;", "LICENSE_USERS = 9999;")
   base.replaceInFileRE(server_dir + "/Common/sources/commondefines.js", "const buildVersion = '[0-9.]*'", "const buildVersion = '" + product_version + "'")
+  base.replaceInFileRE(server_dir + "/Makefile", "Ascensio System SIA", "Made in Test")
+  base.replaceInFileRE(server_dir + "/Makefile", "https://www.onlyoffice.com/", "http://www.test.com")
 
   custom_public_key = branding_dir + '/debug.js'
 
